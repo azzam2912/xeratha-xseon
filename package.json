@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"appwrite": "^15.0.0"
+		"appwrite": "^15.0.0",
+		"mongodb": "^6.8.0"
 	}
 }

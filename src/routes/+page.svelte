@@ -1,13 +1,9 @@
-<head>
-    <title>Xeratha Xseon</title>
-</head>
-
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-</style>
+<script>
+    import H1 from "$lib/components/typography/H1.svelte";
+	import Island from "../lib/components/islands/Island.svelte";
+</script>
+<div>
+    <Island>
+        <H1>Welcome to Xeratha Xseon! A world by Azzam</H1>
+    </Island>
+</div>
