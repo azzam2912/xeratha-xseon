@@ -1,8 +1,8 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
-import { MONGODB_URI } from "$env/static/private";
+import { PUBLIC_MONGODB_URI } from "$env/static/public";
 
 
-const client = new MongoClient(MONGODB_URI, {
+const client = new MongoClient(PUBLIC_MONGODB_URI, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
