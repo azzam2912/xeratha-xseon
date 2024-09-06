@@ -1,6 +1,6 @@
 <script>
 	import { invalidateAll } from '$app/navigation';
-	import { addTweet, deleteTweet } from '$lib/tweets.js';
+	import { addTweet, deleteTweet } from '$lib/server/tweets.js';
 	import { user } from '$lib/user.js';
 
 	export let data;
