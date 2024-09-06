@@ -1,25 +1,9 @@
 <script>
 	import { invalidateAll } from '$app/navigation';
-	import { addTweet, deleteTweet } from '$lib/server/tweets.js';
 	import { user } from '$lib/user.js';
 
 	export let data;
 
-	const add = async (e) => {
-		e.preventDefault();
-		const formEl = e.target;
-		const formData = new FormData(formEl);
-		await addTweet(formData.get('linkUrl'), formData.get('title'), formData.get('content'));
-		invalidateAll();
-
-		// Reset form
-		formEl.reset();
-	};
-
-	const remove = async (id) => {
-		await deleteTweet(id);
-		invalidateAll();
-	};
 </script>
 
 {#if $user}
